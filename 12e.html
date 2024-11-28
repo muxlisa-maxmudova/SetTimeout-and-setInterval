@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12e</title>
+</head>
+<body>
+ <button onclick="add()">Add to cart</button>
+ <p class="text"></p>
+ <script>
+
+   const text =  document.querySelector('.text')
+   function add (){
+
+     text .innerHTML='Added'
+     setTimeout(()=>{
+       text.innerHTML=''
+     }, 2000)
+   }
+ </script>
+</body>
+</html>

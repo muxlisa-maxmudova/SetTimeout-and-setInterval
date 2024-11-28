@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12f</title>
+</head>
+<body>
+<button onclick="add()">Add to cart</button>
+<p class="text"></p>
+<script>
+  let timeoutId;
+  const text =  document.querySelector('.text')
+  function add (){
+    text .innerHTML='Added'
+
+    clearTimeout(timeoutId)
+
+    timeoutId = setTimeout(()=>{
+      text.innerHTML=''
+    }, 2000)
+  }
+</script>
+</body>
+</html>
